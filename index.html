@@ -4,13 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="projekt strony sieci lodziarni" />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./node_modules/normalize.css/normalize.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
     <title>My own icecream!</title>
   </head>
   <body>
-    <header>
-      <section>
+    <header class="header">
+      <section class="logo">
         <a href="index.html"
           ><img
             src="./assets/images/logo.png"
@@ -19,238 +24,275 @@
             height="50"
           />
         </a>
-        <button>burger</button>
+        <button class="burger">burger</button>
       </section>
-      <section>
-        <button>X</button>
-        <button>Kup teraz!</button>
-        <nav>
-          <ul>
-            <li>Strona główna</li>
-            <li>O nas</li>
-            <li>jak to robimy?</li>
-            <li>Nasze produkty</li>
-            <li>Kontakt</li>
+      <section class="popup">
+        <button class="popup__closeBtn">X</button>
+        <button class="buyBtn primaryBtn">Kup teraz!</button>
+        <nav class="navbar">
+          <ul class="navbar__list">
+            <li class="navbar__element">Strona główna</li>
+            <li class="navbar__element">O nas</li>
+            <li class="navbar__element">jak to robimy?</li>
+            <li class="navbar__element">Nasze produkty</li>
+            <li class="navbar__element">Kontakt</li>
           </ul>
         </nav>
       </section>
-      <section>
-        <h1>
-          <span>Lody</span>
-          <span>robione z pasją!</span>
+      <section class="header__content">
+        <h1 class="header__pageTitle">
+          <span class="header__pageTitle--firstPt">Lody</span>
+          <span class="header__pageTitle--secondPt">robione z pasją!</span>
         </h1>
-        <ul>
-          <li><button>Nasze produkty</button></li>
-          <li><button>Jak to robimy?</button></li>
+        <ul class="header__buttons">
+          <li><button class="secondaryBtn">Nasze produkty</button></li>
+          <li><button class="primaryBtn">Jak to robimy?</button></li>
         </ul>
-        <div>
-          <div>KOŁO</div>
-          <img src="./assets/images/ice.png" alt="lód w rożku" height="410" />
-        </div>
       </section>
+      <div class="header__backgroundIMG">
+        <div class="header__circle">KOŁO</div>
+        <img
+          class="header__coneIMG"
+          src="./assets/images/ice.png"
+          alt="lód w rożku"
+          height="410"
+        />
+      </div>
     </header>
-    <main>
-      <section>
-        <h2>
-          <span>Produkty</span>
-          <span>w 100% naturalne!</span>
+    <main class="main">
+      <section class="products">
+        <h2 class="products__title">
+          <span class="products__title--firstPt">Produkty</span>
+          <span class="products__title--secondPt">w 100% naturalne!</span>
         </h2>
-        <article>
+        <div class="productCard">
           <img
+            class="productCard__img"
             src="./assets/images/ice-cream.png"
             alt="rożek truskawkowy"
             width="250"
             height="250"
           />
-          <h3>Lody</h3>
-          <p>...</p>
-          <p>
+          <h3 class="productCard__title">Lody</h3>
+          <p class="productCard__decor">...</p>
+          <p class="productCard__content">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus
             corporis quo sunt eius dolore perferendis voluptatibus velit impedit
             officiis. Aliquam quaerat odio perspiciatis pariatur? Necessitatibus
             fuga autem natus repudiandae. Doloribus.
           </p>
-          <button>-></button>
-        </article>
-        <article>
+          <button class="productCard__btn">-></button>
+        </div>
+        <div class="productCard">
           <img
+            class="productCard__img"
             src="./assets/images/ice-coffee.png"
-            alt="kawa mrożona"
+            alt="rożek truskawkowy"
             width="250"
             height="250"
           />
-          <h3>Kawa mrożona</h3>
-          <p>...</p>
-          <p>
+          <h3 class="productCard__title">Lody</h3>
+          <p class="productCard__decor">...</p>
+          <p class="productCard__content">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus
             corporis quo sunt eius dolore perferendis voluptatibus velit impedit
             officiis. Aliquam quaerat odio perspiciatis pariatur? Necessitatibus
             fuga autem natus repudiandae. Doloribus.
           </p>
-          <button>-></button>
-        </article>
-        <article>
+          <button class="productCard__btn">-></button>
+        </div>
+        <div class="productCard">
           <img
+            class="productCard__img"
             src="./assets/images/milkshakes.png"
-            alt="napój mleczny"
+            alt="rożek truskawkowy"
             width="250"
             height="250"
           />
-          <h3>Napoje mleczne</h3>
-          <p>...</p>
-          <p>
+          <h3 class="productCard__title">Lody</h3>
+          <p class="productCard__decor">...</p>
+          <p class="productCard__content">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus
             corporis quo sunt eius dolore perferendis voluptatibus velit impedit
             officiis. Aliquam quaerat odio perspiciatis pariatur? Necessitatibus
             fuga autem natus repudiandae. Doloribus.
           </p>
-          <button>-></button>
-        </article>
+          <button class="productCard__btn">-></button>
+        </div>
       </section>
-      <article>
-        <h2>
-          <span>Miłość i tradycja</span>
-          <span>Jak to robimy?</span>
+      <section class="about">
+        <h2 class="about__title">
+          <span class="about__title--firstPt">Miłość i tradycja</span>
+          <span class="about__title--secondPt">Jak to robimy?</span>
         </h2>
-        <img src="./assets/images/cow.png" alt="krowa i mleko" width="280" />
-        <p>
+        <img
+          class="about__img"
+          src="./assets/images/cow.png"
+          alt="krowa i mleko"
+          width="280"
+        />
+        <p class="about__content--primary">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore
           numquam quod impedit, provident ab sit! Sunt quaerat autem doloribus
           earum.
         </p>
-        <p>
+        <p class="about__content--secindary">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
           voluptatum culpa nobis quos dolores deleniti facere tempore doloremque
           iste. Incidunt aliquam quisquam, dignissimos corrupti et iure quaerat
           omnis nemo ratione maiores, vel a molestiae architecto!
         </p>
-        <button>Więcej... ></button>
-        <ul>
-          <li>
-            <p>SVG</p>
-            <p>721</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </li>
-          <li>
-            <p>SVG</p>
-            <p>16kg</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </li>
-          <li>
-            <p>SVG</p>
-            <p>84</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </li>
-        </ul>
-      </article>
-      <section>
+        <button class="primaryBtn">Więcej... ></button>
+        <section class="facts">
+          <div class="fact">
+            <p class="fact__SVG">SVG</p>
+            <p class="fact__value">721</p>
+            <p class="fact__desc">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+          <div class="fact">
+            <p class="fact__SVG">SVG</p>
+            <p class="fact__value">16kg</p>
+            <p class="fact__desc">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+          <div class="fact">
+            <p class="fact__SVG">SVG</p>
+            <p class="fact__value">84</p>
+            <p class="fact__desc">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+        </section>
+      </section>
+      <section class="comments">
         <img
+          class="comments__collage"
           src="./assets/images/photo-collage-1280px@1x.png"
           alt="kolaż"
           width="364"
         />
-        <section>
+        <section class="comment">
           <img
+            class="comment__person"
             src="./assets/images/person-one.png"
             alt="uśmiechnięta kobieta"
           />
-          <div>
-            <img src="./assets/images/quote.png" alt="cudzysłów" />
-            <p>
+          <div class="comment__content">
+            <img
+              class="comment__quote"
+              src="./assets/images/quote.png"
+              alt="cudzysłów"
+            />
+            <p class="comment__text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
               reiciendis ullam ratione vel reprehenderit recusandae iure
               adipisci, molestiae ut nobis!
             </p>
           </div>
-          <div>
-            <p>ooo</p>
-            <p>Emilia, Poznań</p>
-            <p>svg domu</p>
-            <p>o</p>
-            <p>o</p>
+          <div class="comment__info">
+            <p class="comment__decor">ooo</p>
+            <p class="comment__author">Emilia, Poznań</p>
+            <p class="comment__icon--home">svg domu</p>
+            <p class="comment__icon--dot">o</p>
+            <p class="comment__icon--dot">o</p>
           </div>
         </section>
       </section>
     </main>
-    <footer>
-      <section>
-        <h2>Kawiarnia</h2>
-        <div>
-          <p>Poznań</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum,
-            eaque!
-          </p>
+    <footer class="footer">
+      <section class="locations">
+        <div class="location">
+          <h2 class="location__title">Kawiarnia</h2>
+          <div class="location__segment">
+            <p class="location__localization">Poznań</p>
+            <p class="location__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatum, eaque!
+            </p>
+          </div>
+          <div class="location__segment">
+            <p class="location__days">Poniedziałek-piątek</p>
+            <p class="location__hours">6:00 - 20:00</p>
+            <p class="location__days">Sobota - niedziela</p>
+            <p class="location__hours">8:00 - 16:00</p>
+          </div>
+          <div class="location__segment">
+            <a class="location__contact" href="tel:+48123234356"
+              >Telefon: (+48) 123 234 356</a
+            >
+            <a class="location__contact" href="mailto:example@gmail.com"
+              >E-mail: example@gmail.com</a
+            >
+          </div>
+        <div class="location">
+          <h2 class="location__title">Food-truck</h2>
+          <div class="location__segment">
+            <p class="location__localization">Leszno</p>
+            <p class="location__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatum, eaque!
+            </p>
+          </div>
+          <div class="location__segment">
+            <p class="location__days">Poniedziałek-piątek</p>
+            <p class="location__hours">10:00 - 20:00</p>
+            <p class="location__days">Sobota - niedziela</p>
+            <p class="location__hours">12:00 - 20:00</p>
+          </div>
+          <div class="location__segment">
+            <a class="location__contact" href="tel:+48123234356"
+              >Telefon: (+48) 123 234 356</a
+            >
+            <a class="location__contact" href="mailto:example@gmail.com"
+              >E-mail: example@gmail.com</a
+            >
+          </div>
+        <div class="location">
+          <h2 class="location__title">Kawiarnia</h2>
+          <div class="location__segment">
+            <p class="location__localization">Lubin</p>
+            <p class="location__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatum, eaque!
+            </p>
+          </div>
+          <div class="location__segment">
+            <p class="location__days">Poniedziałek-piątek</p>
+            <p class="location__hours">6:00 - 20:00</p>
+            <p class="location__days">Sobota - niedziela</p>
+            <p class="location__hours">8:00 - 16:00</p>
+          </div>
+          <div class="location__segment">
+            <a class="location__contact" href="tel:+48123234356"
+              >Telefon: (+48) 123 234 356</a
+            >
+            <a class="location__contact" href="mailto:example@gmail.com"
+              >E-mail: example@gmail.com</a
+            >
+          </div>
         </div>
-        <div>
-          <p>Poniedziałek-piątek</p>
-          <p>6:00 - 20:00</p>
-          <p>Sobota - niedziela</p>
-          <p>8:00 - 16:00</p>
-        </div>
-        <div>
-          <a href="tel:+48123234356">Telefon: (+48) 123 234 356</a>
-          <a href="mailto:example@gmail.com">E-mail: example@gmail.com</a>
-        </div>
-      </section>
-      <section>
-        <h2>Foodtruck</h2>
-        <div>
-          <p>Leszno</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum,
-            eaque!
-          </p>
-        </div>
-        <div>
-          <p>Poniedziałek-piątek</p>
-          <p>6:00 - 20:00</p>
-          <p>Sobota - niedziela</p>
-          <p>8:00 - 16:00</p>
-        </div>
-        <div>
-          <a href="tel:+48123234356">Telefon: (+48) 123 234 356</a>
-          <a href="mailto:example@gmail.com">E-mail: example@gmail.com</a>
-        </div>
-      </section>
-      <section>
-        <h2>Kawiarnia</h2>
-        <div>
-          <p>Lubin</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum,
-            eaque!
-          </p>
-        </div>
-        <div>
-          <p>Poniedziałek-piątek</p>
-          <p>6:00 - 20:00</p>
-          <p>Sobota - niedziela</p>
-          <p>8:00 - 16:00</p>
-        </div>
-        <div>
-          <a href="tel:+48123234356">Telefon: (+48) 123 234 356</a>
-          <a href="mailto:example@gmail.com">E-mail: example@gmail.com</a>
-        </div>
-      </section>
-      <ul>
-        <li><button>Nasze lokalizacje ></button></li>
-        <li><button>Franczyza ></button></li>
+    
+      <ul class="locations__buttons">
+        <li><button class="secondaryBtn">Nasze lokalizacje ></button></li>
+        <li><button class="primaryBtn">Franczyza ></button></li>
       </ul>
-      <div>
-        <p>Domowe lody</p>
-        <p>robione z pasją!</p>
+      <div class="footer__title">
+        <p class="footer__title--firstPt">Domowe lody</p>
+        <p class="footer__title--secondPt">robione z pasją!</p>
       </div>
-      <ul>
-        <li>Insta</li>
-        <li>telegram</li>
-        <li>fejsik</li>
+      <ul class="socials">
+        <li class="socials__element">Insta</li>
+        <li class="socials__element">telegram</li>
+        <li class="socials__element">fejsik</li>
       </ul>
-      <div>
-        <span>Masz pytanie? Zadzwoń:</span>
-        <a href="tel:+48123234356">Telefon: (+48) 123 234 356</a>
+      <div class="contacts">
+        <span class="contacts__description">Masz pytanie? Zadzwoń:</span>
+        <a class="contacts__tel" href="tel:+48123234356">Telefon: (+48) 123 234 356</a>
       </div>
-      <div><p>© 2019 - IceCream. All Rights Reserved.</p></div>
+      <div class="copyrights"><p class="copyrights__text">© 2019 - IceCream. All Rights Reserved.</p></div>
     </footer>
   </body>
 </html>
