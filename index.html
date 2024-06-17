@@ -15,8 +15,9 @@
   </head>
   <body>
     <header class="header">
-      <section class="logo">
-        <a href="index.html"
+      <div class="wrapper">
+      <section class="header__topBar">
+        <a class="logo" href="index.html"
           ><img
             src="./assets/images/logo.png"
             alt="logo"
@@ -24,11 +25,11 @@
             height="50"
           />
         </a>
-        <button class="burger">burger</button>
+        <button class="button burger">burger</button>
       </section>
-      <section class="popup">
-        <button class="popup__closeBtn">X</button>
-        <button class="buyBtn primaryBtn">Kup teraz!</button>
+      <section class="wrapper popup">
+        <button class="button popup__closeBtn">X</button>
+        <button class="button primaryBtn">Kup teraz!</button>
         <nav class="navbar">
           <ul class="navbar__list">
             <li class="navbar__element">Strona główna</li>
@@ -45,8 +46,8 @@
           <span class="header__pageTitle--secondPt">robione z pasją!</span>
         </h1>
         <ul class="header__buttons">
-          <li><button class="secondaryBtn">Nasze produkty</button></li>
-          <li><button class="primaryBtn">Jak to robimy?</button></li>
+          <li><button class="button secondaryBtn">Nasze produkty</button></li>
+          <li><button class="button primaryBtn">Jak to robimy?</button></li>
         </ul>
       </section>
       <div class="header__backgroundIMG">
@@ -58,9 +59,10 @@
           height="410"
         />
       </div>
+      </div>
     </header>
     <main class="main">
-      <section class="products">
+      <section class="wrapper products">
         <h2 class="products__title">
           <span class="products__title--firstPt">Produkty</span>
           <span class="products__title--secondPt">w 100% naturalne!</span>
@@ -81,7 +83,7 @@
             officiis. Aliquam quaerat odio perspiciatis pariatur? Necessitatibus
             fuga autem natus repudiandae. Doloribus.
           </p>
-          <button class="productCard__btn">-></button>
+          <button class="button primaryBtn">-></button>
         </div>
         <div class="productCard">
           <img
@@ -99,7 +101,7 @@
             officiis. Aliquam quaerat odio perspiciatis pariatur? Necessitatibus
             fuga autem natus repudiandae. Doloribus.
           </p>
-          <button class="productCard__btn">-></button>
+          <button class="button primaryBtn">-></button>
         </div>
         <div class="productCard">
           <img
@@ -117,10 +119,10 @@
             officiis. Aliquam quaerat odio perspiciatis pariatur? Necessitatibus
             fuga autem natus repudiandae. Doloribus.
           </p>
-          <button class="productCard__btn">-></button>
+          <button class="button primaryBtn">-></button>
         </div>
       </section>
-      <section class="about">
+      <section class="wrapper about">
         <h2 class="about__title">
           <span class="about__title--firstPt">Miłość i tradycja</span>
           <span class="about__title--secondPt">Jak to robimy?</span>
@@ -142,7 +144,7 @@
           iste. Incidunt aliquam quisquam, dignissimos corrupti et iure quaerat
           omnis nemo ratione maiores, vel a molestiae architecto!
         </p>
-        <button class="primaryBtn">Więcej... ></button>
+        <button class="button primaryBtn">Więcej... ></button>
         <section class="facts">
           <div class="fact">
             <p class="fact__SVG">SVG</p>
@@ -167,7 +169,7 @@
           </div>
         </section>
       </section>
-      <section class="comments">
+      <section class="wrapper comments">
         <img
           class="comments__collage"
           src="./assets/images/photo-collage-1280px@1x.png"
@@ -202,7 +204,7 @@
         </section>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="wrapper footer">
       <section class="locations">
         <div class="location">
           <h2 class="location__title">Kawiarnia</h2>
@@ -276,8 +278,8 @@
         </div>
     
       <ul class="locations__buttons">
-        <li><button class="secondaryBtn">Nasze lokalizacje ></button></li>
-        <li><button class="primaryBtn">Franczyza ></button></li>
+        <li><button class="button secondaryBtn">Nasze lokalizacje ></button></li>
+        <li><button class="button primaryBtn">Franczyza ></button></li>
       </ul>
       <div class="footer__title">
         <p class="footer__title--firstPt">Domowe lody</p>

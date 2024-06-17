@@ -1,0 +1,26 @@
+.button {
+  cursor: pointer;
+  border: 0;
+  border-radius: 50px;
+  padding: 1em;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.primaryBtn {
+  background-color: $neutralLightColor;
+  color: $darkTextColor;
+  &:hover,
+  &:focus {
+    background-color: $hoverBtnLightColor;
+  }
+}
+
+.secondaryBtn {
+  background-color: $darkTextColor;
+  color: $neutralLightColor;
+  &:hover,
+  &:focus {
+    background-color: $hoverBtnDarkColor;
+  }
+}
